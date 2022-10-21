@@ -1,0 +1,24 @@
+.vl{
+    border-right: 2px dashed black;
+    height: 500px;
+    position: absolute;
+    right:66.5%;
+    margin-right: -3px;
+    top: 0;
+}
+html,body{
+    max-width: 100%;
+    overflow-x:hidden;
+    overflow: y 0.5em;
+    height:100vh ;
+}
+nav{
+    width:1350px;
+}
+*{
+    font-family:'Kaushan Script';
+}
+.icon{
+    font-size: 70px;
+    color:powderblue;
+}
