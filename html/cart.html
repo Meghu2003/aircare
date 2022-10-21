@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/E:/templates/css/bootstrap.css">
+    <script src="/E:/templates/js/bootstrap.bundle.js"></script>
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+</head>
+<body style="font-family:Kaushan Script;">
+    <br>
+    <h2>Start Entering Details:</h2>
+    <button class="btn btn-outline-secondary" onclick="proceed()">Start</button>
+   <div class="m-S">
+        <table class="table table-border shadow-lg bg-success text-white text-center">
+            <thead class="bg-secondary">
+                <tr>
+                    <th>Passenger No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>E-Mail</th>
+                </tr>
+            </thead>
+            <tbody id="data">    
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-7"></div>
+        <div class="col-sm-5">
+        <p id="total"></p>
+        <a href="home.html"><button class="btn btn-outline-primary" onclick="proceed1()">Proceed To Pay</button></a>
+        &nbsp;&nbsp;<a href="booking.html"><button class="btn btn-outline-dark" onclick="cancel()">Cancel</button></a>
+        </div>
+    </div>
+    <script language="javascript" src="/E:/templates/js/script4.js"></script>
+</body>
+</html>

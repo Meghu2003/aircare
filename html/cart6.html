@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/E:/templates/css/bootstrap.css">
+    <script src="/E:/templates/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="/E:/templates/css/style1.css">
+    <link rel="stylesheet" href="/E:/templates/css/style5.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1><img src="/E:/templates/images/aeroplane/logo1.jpeg" height="80" width="200"><a class="navbar-brand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AIR CARE</a></h1>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+</header>
+<section>
+    <div class="row">     
+        <div class="col-sm-4 pt-5 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <p class="ps-5 text-dark" id="total"></p>
+                </div>
+                <div class="card-footer">
+                    <a href="cart.html" class="btn btn-outline-dark">Proceed To Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row pt-5 mt-3">
+                <div class="col-sm-6">
+                    <p>Enter the Airport to catch a flight</p>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Arrival">
+                        <label for="floatingInput">From Where?</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 pe-4">
+                    <p>Enter the Airport to land the flight</p>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Landing">
+                        <label for="floatingInput">To Where?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-1">
+                <div class="col-sm-6">
+                    <p>Select your date of journey</p>
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="date">
+                        <label for="floatingInput">Date Of Journey</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-1">
+                <div class="col-sm-6">
+                    <p>Select number of tickets</p>
+                    <div class="form-floating">
+                        <input type="text" id="ticket" class="form-control" placeholder="0">
+                        <label>Number of Tickets</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-sm-2">
+                    <button class="btn btn-outline-dark" onclick="items();">Check Total</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    
+    function items(){
+        var total1,x=document.getElementById('ticket').value;
+        var y=2154;
+        total1=parseInt(x)*y;
+        document.getElementById('total').innerHTML='Total : : => $'+ total1 +".00";
+    }
+</script>
+</body>
+</html>

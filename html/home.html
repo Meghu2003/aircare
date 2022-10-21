@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/E:/templates/css/bootstrap.css">
+    <script src="/E:/templates/js/bootstrap.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/E:/templates/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/E:/templates/css/style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+    <link rel="stylesheet" href="/E:/templates/css/style2.css">
+    
+</head>
+<body>
+    <!--NavBar section-->
+    <div class="bg-dark">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1>
+                    <img src="/E:/templates/images/aeroplane/logo1.jpeg" height="80" width="200" class="ps-5 ms-5">
+                    <h3 class="text-white">Air Care</h3>
+                    <a href="aircare.html" class="btn btn-light">Log Out</a>
+                </h1>
+              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-dark">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Bookings</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <section id="background"></section>
+        <!--Slider Section-->
+        <div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/E:/templates/images/aeroplane/gif3.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-2">Family All Together</h5>
+                    <p>Fly together with our family with our care ,i.e, AirCare</p>
+                    <a href="http://localhost:8501" target="_blank"><button class="btn btn-outline-dark">Model</button></a>
+                    
+                </div>
+                
+            </div>
+            <div class="carousel-item">
+                <img src="/E:/templates/images/aeroplane/pic2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-2">Parent's Protection</h5>
+                    <p>Want to start the membership and get discount!!</p>
+                    <button class="btn btn-outline-dark">
+                        <a href="login.html" style="text-decoration: none;" class="text-white">Sign-Up</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/E:/templates/images/aeroplane/pic3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-2">Final Poster</h5>
+                    <p>Already have an account</p>
+                    <button class="btn btn-outline-dark">
+                        <a href="login.html" style="text-decoration: none;" class="text-white">Login</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        <!--Card Section-->
+        <section>
+            <p class="display-4 text-white" style="text-align:center;">Know more about the members of our Family</p>
+                <div class="row">
+                    <div class="splide">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h4 class="card-title">JAMES</h4>
+                                            <img src="/E:/templates/images/people/pil1.jpeg" style='width: 100%;' alt="">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+                                        <div class="card-body tt">
+                                            <p>James was a former fighter pilot and officer in the russian Air Force. Yeager is widely regarded as the best pilot in the world, with a vast list of achievements to support that claim.</p>
+                                            <p>He was the fourth pilot ever to travel faster than the speed of sound</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h5 class="card-title">CHARLES</h5>
+                                            <img src="/E:/templates/images/people/pil2.jpeg" width="420px" height="310px">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+                                        <div class="card-body tt">
+                                            <p>Charles about his five month journey across five continents and 52 countries as he broke the world record for youngest pilot to fly around the world solo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide m-2 me-4">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h5 class="card-title">AMELIA EARHARNT</h5>
+                                            <img src="/E:/templates/images/people/pil3.jpeg" width="420px" height="310px">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+                                        <div class="card-body tt">
+                                            <p>Amelia Earhart was an American aviation pioneer who earned her pilot license in 1923.</p>
+                                            <p>She set a record as the first woman to fly across North America, and another one as the first woman to fly solo, non-stop, across the Atlantic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide me-3">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h5 class="card-title">ERICH HARTMANN</h5>
+                                            <img src="/E:/templates/images/people/pil4.jpeg" width="420px" height="370px">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+                                        <div class="card-body tt">
+                                            <p>Erich Hartmann 20 May 2022.</p>
+                                            <p>Erich Hartmann, sometimes referred to as the 'Black Devil', is the deadliest fighter pilot in history, having downed 352 Allied planes during World War Two over the course of some 1,400 missions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide me-3">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h5 class="card-title">PETER OBI</h5>
+                                            <img src="/E:/templates/images/people/pil5.jpeg" width="100%" height="370px">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+
+                                        <div class="card-body tt">
+                                            <p>Peter Obi has hailed Nigerian-born Miracle Izuchukwu for her fabulous feat. The 25-year-old is now the youngest female commercial pilot in the United States.</p>
+                                            <p> a tweet, Obi said she made history and also made her country proud. “My very warm congratulations to Miracle Izuchukwu,</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 splide__slide me-3">
+                                    <div class="card bg-dark text-white text-center">
+                                        <div class="card-head">
+                                            <h5 class="card-title">RAYMONDE DE LAROCHE</h5>
+                                            <img src="/E:/templates/images/people/pil6.jpeg" width="100%" height="370px">
+                                        </div>
+                                        <button class="img btn btn-outline-light"></button>
+
+                                        <div class="card-body tt">
+                                            <p class="pe-5 me-3">Raymonde de Laroche The first female to ever pilot an airplane solo was Raymonde de Laroche in 1909. In 1910, she was also the first female to obtain a pilot's license</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+                
+    </div>
+        <!--Video Section-->
+        <section>
+            <div class="bg-dark">
+                <div class="row">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="row align-items-center">
+                            <div class="col-sm-8">
+                                <h3>LOW COST AIRLINES</h3>
+                                <p>With low cost airlines, going for a dream vacation at economical rates is easy now. Also called as budget airlines and discounted carriers, these cheap air flights offer great deals to the customers and convert their longing for air travel into realty. So, take the advantage of cheapest airfare on these low cost carries without any delay. EaseMyTrip is a source to find cheap deals on Low cost airlines for your preferred destination in India. With its user-friendly search engine, grab lowest flight fare for your next holiday and enjoy a hassle-free journey. For any other query, call us and may be you are the lucky one to get great discounts on holiday packages, car rentals and hotels</p>
+                                <p>Low cost airlines are airlines which offer cheap flight tickets. They are also called budget airlines, cheap flights and discount carriers. Low Cost Carriers play a very important role in the aviation industry. Low cost airlines are actually a gift to the travellers, as the passengers can utilise air travel with affordable fares</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-down" style="font-size:32px;" aria-hidden="true"></i>
+                                <br>
+                                
+                                <a href="/E:/templates/images/videos/Pexels Videos 2658998.mp4"><button class="btn btn-outline-primary m-2">Play Now</button></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="/E:/templates/images/aeroplane/pic8.jpeg"  height="300" width="500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark">
+                <div class="row">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="/E:/templates/images/media/fac1.jpeg" style="width:100% ;" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>OUR FACITIES AVAILABLE</h3>
+                                <p>Personal televisions. On most long-haul routes, many airlines have now installed personal televisions for every passenger. ...
+                                    The Wi-Fi. ...
+                                    The amenity kit. ...
+                                    Open and closed suite seats. ...
+                                    The airline meal. ...
+                                    Pre-moistened towels</p>
+                                <p>Airport facility means an air transportation facility, including but not limited to terminal improvements, air cargo facilities, airfield improvements and general aviation facilities, and necessary or incidental site improvements, utilities, roads, parking lots, land or rights in land, machinery, equipment, apparatus ...</p>
+                            
+                                <i class="fa fa-hand-o-down" style="font-size:32px; color: black;" aria-hidden="true"></i>
+                                <br>
+                                
+                                <a href="/E:/templates/images/videos/Pexels Videos 2658998.mp4"><button class="btn btn-outline-primary m-2">Play Now</button></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark">
+                <div class="row">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="row align-items-center">
+                            <div class="col-sm-8">
+                                <h3 class="text-center">LOW COST AIRLINES</h3>
+                                <p>&nbsp;&nbsp;With low cost airlines, going for a dream vacation at economical rates is easy now. Also called as budget airlines and discounted carriers, these cheap air flights offer great deals to the customers and convert their longing for air travel into realty. So, take the advantage of cheapest airfare on these low cost carries without any delay. EaseMyTrip is a source to find cheap deals on Low cost airlines for your preferred destination in India. With its user-friendly search engine, grab lowest flight fare for your next holiday and enjoy a hassle-free journey. For any other query, call us and may be you are the lucky one to get great discounts on holiday packages, car rentals and hotels</p>
+                                <p>&nbsp;&nbsp;Low cost airlines are airlines which offer cheap flight tickets. They are also called budget airlines, cheap flights and discount carriers. Low Cost Carriers play a very important role in the aviation industry. Low cost airlines are actually a gift to the travellers, as the passengers can utilise air travel with affordable fares</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-down" style="font-size:32px;" aria-hidden="true"></i>
+                                <br>
+                                
+                                <a href="/E:/templates/images/videos/Pexels Videos 2658998.mp4"><button class="btn btn-outline-primary m-2">Play Now</button></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="/E:/templates/images/aeroplane/review1.jpeg" style="width: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <footer>
+            <div class="row">
+                <div class="card mt-4 bg-dark text-white">
+                    <div class="row align-items-center">
+                        <div class="col-sm-8 text-center">
+                            <p class="display-4">Follow us on</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href='https://www.youtube.com'><i class="fa fa-youtube icon"></i></a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href='https://www.facebook.com'><i class="fa fa-facebook icon"></i></a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href='https://www.instagram.com'><i class="fa fa-instagram icon"></i></a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href='https://www.pinterest.com'><i class="fa fa-pinterest icon"></i></a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href='https://www.twitter.com'><i class="fa fa-twitter icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="h3">Watch the video to know more about our website</p>
+                            <video width="360" height="260" controls>
+                                <source src="/E:/templates/images/videos/vid4.mp4" type="video/mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            rewind: true,
+        });
+    
+        splide.mount();
+    </script>
+    <script src="js/script3.js"></script>
+</body>
+</html>
