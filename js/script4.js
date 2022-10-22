@@ -9,22 +9,22 @@ function proceed(){
         var gender=prompt('Enter Gender::')
         var flight=prompt('Enter Flight::')
         switch(flight){
-            case 'American EAGLE':
+            case 'Vistara':
                 total2=1990*x2;
                 break;
-            case 'VIRGIN ATLANTIC':
+            case 'AirIndia':
                 total2=6000*x2;
                 break;
-            case 'JET BLUE':
+            case 'AirAsia':
                 total2=2540*x2;
                 break;
-            case 'EAS JET.COM':
+            case 'Indigo':
                 total2=1498*x2;
                 break;
-            case 'EMIRATES':
+            case 'GO-FIRST':
                 total2=8754*x2;
                 break;
-            case 'KLM':
+            case 'Spicejet':
                 total2=2154*x2;
                 break;
             default:
